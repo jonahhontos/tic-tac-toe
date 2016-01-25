@@ -31,14 +31,14 @@ function clickSpot(spot) {
 function checkForWin() {
   var p = turn ? "X" : "O"
   // console.log(p + spots[0].innerText)
-  if ((spots[0].innerText=== p && spots[1].innerText === p && spots[2].innerText === p) ||
-      (spots[0].innerText=== p && spots[3].innerText === p && spots[6].innerText === p) ||
-      (spots[0].innerText=== p && spots[4].innerText === p && spots[8].innerText === p) ||
-      (spots[1].innerText=== p && spots[4].innerText === p && spots[7].innerText === p) ||
-      (spots[2].innerText=== p && spots[4].innerText === p && spots[6].innerText === p) ||
-      (spots[2].innerText=== p && spots[5].innerText === p && spots[8].innerText === p) ||
-      (spots[3].innerText=== p && spots[4].innerText === p && spots[5].innerText === p) ||
-      (spots[6].innerText=== p && spots[7].innerText === p && spots[8].innerText === p)) {
+  if ((spots[0].innerText === p && spots[1].innerText === p && spots[2].innerText === p) ||
+      (spots[0].innerText === p && spots[3].innerText === p && spots[6].innerText === p) ||
+      (spots[0].innerText === p && spots[4].innerText === p && spots[8].innerText === p) ||
+      (spots[1].innerText === p && spots[4].innerText === p && spots[7].innerText === p) ||
+      (spots[2].innerText === p && spots[4].innerText === p && spots[6].innerText === p) ||
+      (spots[2].innerText === p && spots[5].innerText === p && spots[8].innerText === p) ||
+      (spots[3].innerText === p && spots[4].innerText === p && spots[5].innerText === p) ||
+      (spots[6].innerText === p && spots[7].innerText === p && spots[8].innerText === p)) {
         alert(p + " wins!")
         reset()
       }
